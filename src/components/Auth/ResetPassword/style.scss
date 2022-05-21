@@ -1,0 +1,172 @@
+@import "/src/style/app.scss";
+.resetpassword{
+    &__container{
+        display:grid;
+        justify-content: center;
+    }
+    &__form{
+        margin-top:-8px;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        &--title{
+            display:block;
+            width:211px;
+            height:24px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 33px;
+            color: #282739;
+            margin-top:32px;
+            margin-left:209px;
+        }
+        &--fail{
+            width: 233px;
+            height:21px;
+            margin-top: 42px;
+            margin-left: 94px;
+            &-hiden{
+                 @extend .resetpassword__form--fail;
+                opacity:0;
+            }
+            &-title{
+                position:relative;
+                color:#E73F3F;
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                margin-left:5.5px;
+            }
+            &-icon{
+                color:#E73F3F;
+                width: 17px;
+                height:17px;
+            }
+        }
+
+        &--password{
+                &-title{
+                    margin-top: 12px;
+                    margin-left: 94px;
+                    & label{
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        width: 88px;
+                        height: 27px;
+                        color:$loginpage-title;
+                    }
+                }
+                &-input{
+                    display:flex;
+                    width:400px;
+                    & input{
+                        position:absolute;
+                        margin-top:2px;
+                        background: #FFFFFF;
+                        border: 1.5px solid #D4D4D7;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        padding: 12px 43.98px 12px 8.5px;
+                        width:400px;
+                        height:44px;
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                    & svg{
+                        position:absolute;
+                        margin:0px 13.66px 13.66px 369.36px;
+                        width:16.67px;
+                        height:16.67px;
+                        color:#7E7D88;
+                    }
+                    
+                }
+        }
+        &--confirmpassword{
+            &-title{
+                margin-top: 45px;
+                margin-left: 94px;
+                & label{
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    width: 88px;
+                    height: 27px;
+                    color:$loginpage-title;
+                }
+            }
+            &-input{
+                display:flex;
+                width:400px;
+                & input{
+                    position:absolute;
+                    margin-top:2px;
+                    background: #FFFFFF;
+                    border: 1.5px solid #D4D4D7;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    padding: 12px 43.98px 12px 8.5px;
+                    width:400px;
+                    height:44px;
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+                & svg{
+                    position:absolute;
+                    margin:0px 13.66px 13.66px 369.36px;
+                    width:16.67px;
+                    height:16.67px;
+                    color:#7E7D88;
+                }
+                
+            }
+    }
+        &--tool{
+            &-submit{
+                width: 162px;
+                height: 40px;
+                background: #FF9138;
+                box-shadow: 0px 0px 6px #E7E9F2;
+                border-radius: 8px;
+                border:none;
+                cursor:pointer;
+                margin-top:13px;
+                margin-left:216px;
+                &:hover{
+                    background: #FF7506;
+                }
+                & span{
+                    font-family:$font--family;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 0px 8px;
+                    color: #FFFFFF;
+    
+                }
+            }
+        }
+    }
+}
+.errorreset{
+    border:none;
+    & input{
+        border: 1.5px solid #E73F3F;
+    }
+}

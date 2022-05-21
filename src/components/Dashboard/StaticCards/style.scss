@@ -1,0 +1,81 @@
+@import "/src/style/app.scss";
+.staticcard{
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 186px;
+    height: 120px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 13px;
+    &__title{
+        display: flex;
+        &--icon{
+            &-img{
+                width: 48px;
+                height: 48px;
+                margin-top: 8px;
+                margin-left: 12px;
+            }
+        }
+        &--name{
+            margin-top: 14px;
+            margin-left: 12.02px;
+            width: 72px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            color: #535261;
+        }
+    }
+    &__content{
+        display: flex;
+        &--count{
+            width: 108px;
+            height: 45px;
+            display: block;
+            margin-top: 12px;
+            margin-left: 12px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 45px;
+            color: #535261;
+        }
+        &--static{
+            width: 48px;
+            height: 14.98px;
+            display: flex;
+            border-radius: 7.18115px;
+            margin-top: 30.53px;
+            margin-left: 10.3px;
+            background: rgba(255, 149, 1, 0.15);
+            color: #FF9138;
+            &-img{
+                margin-top: 3.99px;
+                margin-left: 6.87px;
+                margin-right: 3.37px;
+                width: 5.25px;
+                height: 6px;
+            }
+            & span{
+                margin-top: 1.59px;
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 12px;
+            }
+        }
+    }
+}
+.down{
+    background: rgba(231, 63, 63, 0.15);
+    color: #E73F3F;
+}
+.decrease{
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,15 @@
+@import "/src/style/app.scss";
+.listrole{
+    &__container{
+        &--content{
+            display: flex;
+            margin-top: 16px;
+            margin-left: 24px;
+            &-left{
+                width: 1112px;
+                height: 343px;
+                background: rgb(255, 216, 144);
+            }
+        }
+    }
+}

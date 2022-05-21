@@ -1,0 +1,103 @@
+@import "/src/style/app.scss";
+.header{
+    width:1240px;
+    height:88px;
+    display:flex;
+    &__left{
+        width:839px;
+        height:100%;
+        display: flex;
+        &--title{
+            display:block;
+            margin:29px 0px 29px 24px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FF9138;
+            &-children{
+                display: block;
+                margin:29px 0px 29px 24px;
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FF9138;
+            }
+        }
+    }
+    &__right{
+        width:401px;
+        height: 100%;
+        display:flex;
+        &--noti{
+            cursor:pointer;
+            margin:28px 0px 28px 109px;
+            width: 32px;
+            height: 32px;       
+            background: #FFF2E7;
+            border:none;
+            border-radius: 32px;
+            &-img{
+                width: 20px;
+                height: 20px;
+            }
+            &:hover{
+                background: #ffe5cf;
+            }
+        }
+        &--account{ 
+            background-color: transparent;
+            width:172px;
+            height:42px;
+            margin:24px 64px 24px 24px;
+            border:none;
+            padding:0;
+            display: flex;
+            &:hover{
+                cursor: pointer;
+            }
+            &-avatar{
+                width:40px;
+                height:40px;
+                &-img{
+                    width:40px;
+                    height:40px;
+                    border-radius: 48px;
+                }
+            }
+            &-title{
+                display: block;
+                margin-left: 8px;
+                text-align: left;
+                &-hello{
+                    display: block;
+                    font-family:$font--family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #7E7D88;
+                }
+                &-name{
+                    display: block;
+                    width: 194px;
+                    height: 24px;
+                    &-user{
+                        font-family:$font--family;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #535261;
+                    }
+                }
+            }
+        }
+    }
+}
+.deactive{
+    color: #7E7D88;
+}

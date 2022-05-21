@@ -1,0 +1,246 @@
+@import "/src/style/app.scss";
+.addrole{
+    margin-top: 32px;
+    margin-left: 24px;
+    &__container{
+        width: 1192px;
+        height: 534px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+        border-radius: 16px;
+        &--title{
+            padding-top: 16px;
+            margin-left: 24px;
+            margin-bottom: 12px;
+            & span{
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FF7506;
+            }
+        }
+        &--content{
+            display: flex;
+            margin-left: 24px;
+            height: 452px;
+            width: 1144px;
+            &-left{
+                height: 452px;
+                width: 560px;
+                margin-right: 24px;
+                &-item{
+                    &-title{
+                        display: flex;
+                        margin-bottom: 8px;
+                        & p{
+                            font-family: $font--family;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #282739;
+                            margin-right: 4px;
+                        }
+                        & span{
+                            font-family: $font--family;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color:#FF4747;
+                        }
+                    }
+                    &-input{
+                        width: 553px;
+                        height: 44px;
+                        margin-right: 24px;
+                        margin-bottom: 12px;
+                        padding: 10px 12px 10px 12px;
+                        background: #FFFFFF;
+                        border: 1.5px solid #D4D4D7;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        &:focus-visible{
+                            outline: none;
+                            border: 1.5px solid #FFAC6A;
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                        }
+                        &-2{
+                            resize: none;
+                            padding: 10px 12px;
+                            width: 553px;
+                            height: 132px;
+                            background: #FFFFFF;
+                            border: 1.5px solid #D4D4D7;
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                            font-family: $font--family;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            &:focus-visible{
+                                outline: none;
+                                border: 1.5px solid #FFAC6A;
+                                box-sizing: border-box;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+                &-note{
+                    margin-top: 14px;
+                    display: flex;
+                    align-content: center;
+                    & span{
+                        color: #FF4747;
+                        margin-top: 5px;
+                        margin-right: 4px;
+                    }
+                    & p {
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #7E7D88;
+                    }
+                }
+            }
+            &-right{
+                height: 452px;
+                width: 560px;
+                &-label{
+                    display: flex;
+                    & p{
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #282739;
+                        margin-right: 4px;
+                    }
+                    & span{
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color:#FF4747;
+                    }
+                }
+                &-panel{
+                    margin-top: 8px;
+                    background: #FFF2E7;
+                    border-radius: 8px;
+                    width: 560px;
+                    height: 420px;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar{
+                        width: 4px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: #FFC89B;
+                        border-radius: 8px;
+                    }   
+                }
+            }
+        }
+     
+    }
+    &__tool{
+        margin-top: 24px;
+        margin-left: 450px;
+        width: 326px;
+        height: 48px;
+        &--cancel{
+            width: 147px;
+            height: 48px;
+            background: #FFF2E7;
+            border: 1.5px solid #FF9138;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 6px #E7E9F2;
+            border-radius: 8px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FF9138;
+            cursor: pointer;
+            &:hover{
+                color: #FF7506;
+                border: 1.5px solid  #FF7506;
+                background: #ffd5b2;
+            }
+        }
+        &--add{
+            margin-left: 32px;
+            width: 147px;
+            height: 48px;
+            background: #FF9138;
+            box-shadow: 0px 0px 6px #E7E9F2;
+            border-radius: 8px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                background: #FF7506;
+            }
+        }
+    }
+    &__feature{
+        margin-top: 16px;
+        margin-left: 24px;
+        &--title{
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FF7506;
+            margin-bottom: 12px;
+        }
+        &--content{
+            margin-bottom: 24px;
+            &-checkbox{
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+                &-check{
+                    margin-right: 8px;
+                    width: 20px;
+                    height: 20px;  
+                    & input{
+                        cursor: pointer;
+                        margin: 0px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                &-content{
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #535261;
+                }
+            }
+        }
+    }
+}

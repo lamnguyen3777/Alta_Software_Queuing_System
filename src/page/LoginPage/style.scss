@@ -1,0 +1,76 @@
+@import "/src/style/app.scss";
+
+.loginpage{
+    &__panel{
+        position:relative;
+        display: block;
+        max-width: 1440px;
+        max-height:810px;
+    }
+    &__container{
+        width:1440px ;
+        height:810px;
+        border-radius: $border--radius;
+        background-color:$backgroud--color; 
+        display:flex;
+        &--left{
+            width: calc(1440px - 848px);
+            height:100%;
+            border-top-left-radius: $border--radius;
+            border-bottom-left-radius: $border--radius;
+            &-logo{
+                margin-top:82px;
+                width: 170px;
+                height:136px;  
+                margin-bottom:75px;
+                margin-left:208px;
+            }
+        }
+        &--right{
+            width: 848px;
+            height:100%;
+            background-color:#ffffff; 
+            border-top-right-radius: $border--radius;
+            border-bottom-right-radius: $border--radius;
+            &-img{
+                width: 605px;
+                height: 614.06px;
+                margin:112.94px 164px 83px 79px;
+            }
+            &-img2{
+                width: 711px;
+                height: 560px;
+                margin:153px 94px 97px 43px;
+            }
+            &-title{
+                &-small{
+                    position: absolute;
+                    height: 54px;
+                    left: 1046px;
+                    top: 407px;
+                    font-family: $font--family;
+                    font-style:normal;
+                    font-weight:lighter;
+                    font-size: 34px;
+                    line-height: 51px;
+                    text-align: center;
+                    color: #FF7506;
+                }
+                &-large{
+                    position: absolute;
+                    height: 54px;
+                    left: 1046px;
+                    top: 454px;
+                    font-family:$font--family;
+                    font-weight: 800;
+                    font-style:normal;
+                    font-weight:bolder;
+                    font-size: 36px;
+                    line-height: 54px;
+                    text-align: center;
+                    color: #FF7506;
+                }
+            }
+        }
+    }
+}

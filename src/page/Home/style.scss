@@ -1,0 +1,43 @@
+@import "/src/style/app.scss";
+.home{
+    &__panel{
+        position:relative;
+        display: block;
+        max-width: 1440px;
+        max-height:810px;
+    }
+    &__container{
+        width:1440px ;
+        height:810px;
+        border-radius: $border--radius;
+        background-color:$backgroud--color; 
+        display:flex;
+        &--left{
+            width: 200px;
+            height:100%;
+            background-color:#ffffff; 
+            border-top-left-radius: $border--radius;
+            border-bottom-left-radius: $border--radius;
+        }
+        &--right{
+            width:  calc(1440px - 200px);
+            height:100%;
+            border-top-right-radius: $border--radius;
+            border-bottom-right-radius: $border--radius;
+            &-header{
+                width:  calc(1440px - 200px);
+                height:88px;
+                border-top-right-radius: $border--radius;
+                z-index: 1;
+                position: absolute;
+
+            }
+          
+            &-content{
+                z-index: 0;
+                position: absolute;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,135 @@
+@import "/src/style/app.scss";
+.dropdown{
+    height: 72px;
+    padding: 0px;
+    margin-right: 24px;
+    &__header{
+        display: block;
+        &--title{
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #282739;
+        }
+    }
+    &__content{
+        &:hover{
+            & .dropdown__button{
+                border: 1.5px solid #FFAC6A;
+            }
+            & .dropdown__button--icon{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__button{
+        display: flex;
+        height: 44px;
+        margin-top: 2px;
+        padding: 0px;
+        border: 1.5px solid #D4D4D7;
+        border-radius: 8px;
+        background: #ffffff;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        &:hover{
+            + .dropdown__list{
+                visibility: visible;
+                transition-delay: 0.2s;
+                animation: growDown 300ms ease-in-out forwards;
+                transform-origin: top center
+            }
+        }
+        &--title{
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #535261;
+            margin-left:10px;
+        }
+        &--icon{
+            width: 12px;
+            height: 6px;
+            margin-right:18px;
+        }
+    }
+    &__list{
+        &:hover{
+            visibility: visible;
+        }
+        position: absolute;
+        visibility: hidden;
+        height: 152px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        justify-content: center;
+        overflow-y: scroll;
+        &--content{
+            display: grid;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            height:136px;
+            &-item{
+                border: none;
+                display: flex;
+                align-items: center;
+                background: #FFFFFF;
+                cursor: pointer;
+                &-title{
+                    @extend .dropdown__button--title;
+                    margin-left:6px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #282739;
+                }
+                &:hover{
+                    background: #FFF2E7;
+                }
+            }
+        } 
+    }
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    20% {
+        transform: scaleY(0.2)
+    }
+    30% {
+        transform: scaleY(0.3)
+    }
+    40% {
+        transform: scaleY(0.4)
+    }
+    50% {
+        transform: scaleY(0.5)
+    }
+    60% {
+        transform: scaleY(0.6)
+    }
+    70% {
+        transform: scaleY(0.7)
+    }
+    80% {
+        transform: scaleY(0.8)
+    }
+    90% {
+        transform: scaleY(0.9)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+
+
+

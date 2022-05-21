@@ -1,0 +1,102 @@
+@import "/src/style/app.scss";
+.modelcard{
+    width: 353px;
+    height: 83px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+    border-radius: 12px;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    display: flex;
+    cursor: pointer;
+    &__left{
+        display: flex;
+        &--chart{
+            margin-left: 16px;
+            margin-top: 12px;
+            display: block;
+            
+            &-big{
+                display: block;
+                width: 60px;
+                height: 60px;
+                z-index: 2;
+            }
+            &-small{
+                margin-top: -79px;
+                width: 50px;
+                height: 50px;
+                z-index: 1;
+            }
+            &-smallest{
+                display: block;
+                margin-top: -66px;
+                width: 40px;
+                height: 40px;
+                z-index: 0;
+            }
+        }
+        &--content{
+            margin-left: 12px;
+            margin-top: 14px;
+            &-count{
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 36px;
+                color: #535261;
+            }
+            &-title{
+                display: flex;
+                &-icon{
+                    width: 14px;
+                    height: 14px;
+                    margin-top: 1px;
+                    margin-right: 4px;
+                }
+                &-name{
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+
+        }
+    }
+    &__right{
+        margin-top: 18px;
+        &--content{
+            margin-left: 37px;
+            display: flex;
+            &-icon{
+                font-size: 34px;
+                margin-top: -16px;
+                margin-right: 4px;
+            }
+            &-title{
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 21px;
+                color: #7E7D88;
+                width: 100px;
+            }
+            &-count{
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+        &--content1{
+            margin-top: -8px;
+            @extend .modelcard__right--content
+        }
+        
+    }
+}

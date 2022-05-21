@@ -1,0 +1,111 @@
+@import "/src/style/app.scss";
+.login{
+    &__container{
+        display:grid;
+        justify-content: center;
+    }
+    &__form{
+        margin-top:-8px;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        &--title{
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 33px;
+            color: #282739;
+            margin-left:209px;
+            margin-top:32px;
+        }
+        &--email{
+            &-title{
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin:15px 0px 4px 94px;
+                    color:$loginpage-title;
+                    width: 396px;
+                    height: 27px;
+            }
+            &-input{
+                    margin: 2px 0px;
+                    width: 400px;
+                    height: 44px;
+                    padding: 12px 8.5px 12px 8.5px;
+                    background: #FFFFFF;
+                    border: 1.5px solid #D4D4D7;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+
+            }
+        }
+        &--tool{
+            display:flex;
+            &-submit{
+                position:absolute;
+                width: 162px;
+                height: 40px;
+                background: #FF9138;
+                box-shadow: 0px 0px 6px #E7E9F2;
+                border-radius: 8px;
+                border:none;
+                cursor:pointer;
+                margin-top:87px;
+                margin-left:24px;
+                &:hover{
+                    background: #FF7506;
+                }
+                & span{
+                    font-family:$font--family;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 0px 8px;
+                    color: #FFFFFF;
+                }
+            }
+            &-cancel{
+                cursor:pointer;
+                width: 162px;
+                height: 40px;
+                margin-top:87px;
+                margin-left:119px;
+                border: 1px solid #FF9138;
+                box-sizing: border-box;
+                filter: drop-shadow(0px 0px 6px #E7E9F2);
+                border-radius: 8px;
+                &:hover{
+                    border: 1px solid #FF7506;
+                    background:#FFF2E7;
+                }
+                & span{
+                    font-family:$font--family;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 0px 8px;
+                    color:#FF9138;
+                    &:hover{
+                        color: #FF7506;
+                    }
+                }
+    
+            }
+        }
+    
+    }
+   
+    
+    
+}

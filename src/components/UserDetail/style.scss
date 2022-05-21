@@ -1,0 +1,98 @@
+@import "/src/style/app.scss";
+.userdetail{
+    &__container{
+        width: 1112px;
+        height: 397px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px rgba(219, 219, 219, 0.5);
+        border-radius: 12px;
+        margin: 168px 104px 245px 24px;
+    }
+    &__panel{
+        display: flex;
+        
+        &--left{
+            min-width: 248px;
+            height: 303px;
+            &-avatar{
+                border-radius: 318px;
+                width: 248px;
+                height: 248px;
+                margin:40px 0px 109px 24px;
+                &-upload{
+                    display: block;
+                    width: 45px;
+                    height: 45px;
+                    border:none;
+                    background-color: transparent;
+                    position:absolute;
+                    margin:-154px 0px 0px 195px;
+                    padding: 0;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    & img{    
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+            &-name{
+                width: 236px;
+                height: 36px;
+                display: block;
+                margin-top:-93px;
+                margin-left: 40px;
+                & span{
+                    font-family:$font--family;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #282739;
+                }
+                
+            }
+
+        }
+        &--form{
+            margin: 40px 24px 81px 24px;
+            width: 792px;
+            height: 276px;
+            display: flex;
+            &-left{
+                width: 396px;
+                height: 276px;
+                margin-right: 24px;
+            }
+            &-right{
+                width: 396px;
+                height: 276px;
+                margin-right: 24px;
+            }
+            &-input{
+                width: 352px;
+                background: #EAEAEC;
+                border:none;
+                border-radius: 6px;
+                padding: 12px 16px;
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 8px;
+                margin-bottom: 24px;
+            }
+            &-title{
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #282739;
+
+            }
+        }
+    }
+}

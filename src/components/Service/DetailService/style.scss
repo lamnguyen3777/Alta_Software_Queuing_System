@@ -1,0 +1,130 @@
+@import "/src/style/app.scss";
+.detailservice{
+    &__container{
+        margin-top: 32px;
+        margin-left: 24px;
+        display: flex;
+        &--left{
+            width: 370px;
+            height: 606px;
+            background: #FFFFFF;
+            box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+            border-radius: 12px;
+            &-content{
+                margin-left: 16px;
+                margin-top: 16px;
+            }
+        }
+        &--center{
+            width: 718px;
+            height: 606px;
+            margin-left: 24px;
+            background: #FFFFFF;
+            box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+            border-radius: 12px;
+            &-content{
+                margin-left: 25px;
+                margin-top: 16px;
+                margin-bottom: 13px;
+                &-tool{
+                    display: flex;
+                    &-datepicker{
+                        margin-left: -12px;
+                    }
+                }
+            }
+        }
+        &--right{
+            width:80px;
+            height: 606px;
+            &-content{
+                &-line{
+                    position: absolute;
+                    width:72px;
+                    height:3px;
+                    margin-top: -2px;
+                    margin-left: 28px;
+                }
+            }
+        }
+    }
+    &__title{
+        display: block;
+        font-family: $font--family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FF7506;
+        margin-bottom: 12px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        & span{
+            width: 87px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #282739;
+            margin-right: 22px;
+        }
+        & p{
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #535261;
+        }
+    }
+    &__syntaxservice{
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        &--example{
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #282739;
+        }
+        & p {
+            margin-right: 10px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #282739;
+            width: 120px;
+        }
+        & span {
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #282739;
+            margin: 0px 8px;
+        }
+        &--input{
+            width: 64px;
+            height: 44px;
+            padding: 10px 12px;
+            background: #FFFFFF;
+            border: 1.5px solid #D4D4D7;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

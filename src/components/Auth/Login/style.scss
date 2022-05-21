@@ -1,0 +1,162 @@
+@import "/src/style/app.scss";
+.login{
+    &__container{
+        display:grid;
+        justify-content: center;
+    }
+    &__form{
+        margin-top:-8px;
+        max-width: 400px;
+        justify-content: center;
+        align-items: center;
+        &--fail{
+            width: 233px;
+            height:21px;
+            margin-top: 42px;
+            &-hiden{
+                 @extend .login__form--fail;
+                opacity:0;
+            }
+            &-title{
+                position:relative;
+                color:#E73F3F;
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                margin-left:5.5px;
+            }
+            &-icon{
+                color:#E73F3F;
+                width: 17px;
+                height:17px;
+            }
+        }
+        &--username{
+            &-title{
+                margin-top: 4px;
+                & label{
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    width: 88px;
+                    height: 27px;
+                    color:$loginpage-title;
+                }
+            }
+            &-input{
+                margin-top:2px;
+                width:400px;
+                height:44px;
+                background: #FFFFFF;
+                border: 1.5px solid #D4D4D7;
+                box-sizing: border-box;
+                border-radius: 8px;
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                padding: 10px 12px 10px 12px;
+            }
+           
+        }
+        &--password{
+                &-title{
+                    margin-top: 16px;
+                    & label{
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        width: 88px;
+                        height: 27px;
+                        color:$loginpage-title;
+                    }
+                }
+                &-input{
+                    display:flex;
+                    width:400px;
+                    & input{
+                        position:absolute;
+                        margin-top:2px;
+                        background: #FFFFFF;
+                        border: 1.5px solid #D4D4D7;
+                        box-sizing: border-box;
+                        border-radius: 8px;
+                        padding: 12px 43.98px 12px 8.5px;
+                        width:400px;
+                        height:44px;
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                    & svg{
+                        position:absolute;
+                        margin:0px 13.66px 13.66px 369.36px;
+                        width:16.67px;
+                        height:16.67px;
+                        color:#7E7D88;
+                    }
+                    
+                }
+                &-forgot{
+                    & button{
+                        width: 102px;
+                       
+                    }
+                    margin-top: 8px;
+                    margin-left:144px;
+                    border:none;
+                    font-family: $font--family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #E73F3F;
+                    background-color: $backgroud--color; 
+                    cursor:pointer;
+                }
+        }
+        &--submit{
+            width: 162px;
+            height: 40px;
+            background: #FF9138;
+            box-shadow: 0px 0px 6px #E7E9F2;
+            border-radius: 8px;
+            border:none;
+            cursor:pointer;
+            margin-top:24px;
+            margin-left:120px;
+            &:hover{
+                background: #FF7506;
+            }
+            & span{
+                font-family:$font--family;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0px 8px;
+                color: #FFFFFF;
+
+            }
+        }
+        
+       
+    }
+}
+.error{
+    border: 1.5px solid #E73F3F;
+}
+.errorpassword{
+    & input{
+        border: 1.5px solid #E73F3F;
+    }
+}

@@ -1,0 +1,190 @@
+@import "/src/style/app.scss";
+.dashboard{
+    width:1240px;
+    height:810px;
+    display: block;
+    &__container{
+        display: flex;
+        &--left{
+            width:839px;
+            height:810px;
+            &-title{
+                font-family: $font--family;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: #FF7506;
+                margin-top:104px;
+                margin-left: 24px;
+                margin-bottom: 20px;
+            }
+            &-content{
+                &-card{
+                    display: flex;
+                    margin-left: 11px;
+                }
+                &-chart{
+                    width: 791px;
+                    height: 484px;
+                    margin-top:16px;
+                    margin-left: 24px;
+                    border-radius: 12px;
+                    background: #FFFFFF;
+                    filter: drop-shadow(2px 2px 15px rgba(70, 64, 67, 0.1));
+                    &-header{
+                        padding-top: 24px;
+                        padding-left: 24px;
+                        display: flex;
+                        &-title{
+                            & h1{
+                                font-family: $font--family;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 30px;
+                                color: #282739;
+                            }
+                            & span{
+                                margin-top: 4px;
+                                font-family: $font--family;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                                color: #A9A9B0;
+                            }
+                            
+                        }
+                        &-button{
+                            &-title{
+                                margin-top:9px;
+                                margin-left: 327px;
+                                font-family: $font--family;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #282739;
+                            }
+                        }
+                        
+                    }
+                    &-content{
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                    &-note1{
+                        display: block;
+                        margin-left: 24px;
+                        margin-top: -44px;
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #535261;
+                    }
+                    &-note2{
+                        display: block;
+                        margin-left: 35px;
+                        margin-top: -10px;
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #535261;
+                    }
+                    &-note3{
+                        display: block;
+                        margin-left: 40px;
+                        margin-top: -12px;
+                        font-family: $font--family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #535261;
+                    }
+                }
+            }
+        }
+        &--right{
+            width:401px;
+            height:810px;
+            background: #ffffff;
+            border-radius: 8px 0px 0px 8px;
+            border-top-right-radius: $border--radius;
+            border-bottom-right-radius: $border--radius;
+            &-title{
+                @extend .dashboard__container--left-title;
+            }
+        }
+    }
+}
+.sdp{
+    margin-left: 24px;
+    margin-top: 4px !important;
+    width: 353px !important;
+    height: 336px !important;
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 0px !important;
+}
+
+.sdp--month-picker{
+    & button{
+        color: #FF7506 !important;
+        border: none !important;
+        box-shadow: none;
+    }
+    & .sdp--month-name{
+        font-family: $font--family !important;
+        font-style: normal!important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        line-height: 22px !important;
+        color: #FF7506 !important;
+    }
+    & svg{
+        width: 20px;
+        height: 20px;
+    }
+}
+.sdp--dates-grid{
+    border-top: 1px solid #DCDDFD;
+    & p{
+        font-family: $font--family !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FF9138 !important;
+    }
+    & .sdp--text{
+        font-family: $font--family !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #535261;
+    }
+    & .sdp--text__inactive{
+        font-family: $font--family !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #7E7D88 ;
+    }
+    & .sdp--date-btn__selected{
+        background: #FF7506;
+        color: #ffffff;
+        border-radius: 8px;
+    }
+}
+
+
+
+

@@ -1,0 +1,52 @@
+@import "/src/style/app.scss";
+.datepicker{
+    width: 320px;
+    height: 72px;
+    &__title{
+        width: 106px;
+        height: 24px;
+        margin-bottom: 2px;
+        font-family: $font--family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #282739;
+    }
+    &__content{
+        width: 320px;
+        height: 44px;
+        display: flex;
+        &--center{
+            display: flex;
+            align-items: center;
+            &-icon{
+                width: 16px;
+                height: 12px;
+                margin: 0px 2px;
+            }
+        }
+    }
+    &__panel{
+        background: #FFFFFF;
+        border: 1.5px solid #D4D4D7;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &--icon{
+            width: 20px;
+            height: 20px;
+        }
+        &--date{
+            font-family: $font--family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #A9A9B0;
+            margin-left: 12px;
+        }
+    }
+}
