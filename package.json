@@ -71,5 +71,6 @@
     "@types/react-datepicker": "^4.4.0",
     "@types/react-dates": "^21.8.3",
     "typescript-plugin-css-modules": "^3.4.0"
+    
   }
 }
