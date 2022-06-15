@@ -20,6 +20,7 @@ export function Header (props: IHeaderProps) {
   const userName = props.name;
 
   const handleOnClick=()=>{
+  
     nav("/home/userdetail");
   }
   const path = location.pathname.length;
@@ -30,7 +31,8 @@ export function Header (props: IHeaderProps) {
                   "header__left--title":true,
                    deactive: (path  !== 15 )})}>{title}</span>
             <span className = "header__left--title-children">{children}</span>
-            <span className = "header__left--title-children">{children2}</span>
+            
+          <span className = "header__left--title-children">{children2}</span>
         </section>
         <section className = "header__right">
             <button className = "header__right--noti">
